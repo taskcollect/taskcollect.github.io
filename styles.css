@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+
+:root {
+    --code-bg: #dfdfdf;
+    --code-font: "Noto Sans Mono", monospace;
+    --code-size: 0.9em;
+    --font-size: 16px;
+    --main-font: "Lato", sans-serif;
+	--nav-font: "Red Hat Display", sans-serif;
+	--accent-color: #165fd2;
+	--accent-hover: #043bcf;
+	--accent-click: #022ca0;
+    --accent-dark: #001399;
+	--site-navy: #00144b;
+	--site-dark: #00103d;
+	--bg-color: #e8e8ed;
+    --bg-alt: #dedede;
+	--bg-hover: #d3d3d3;
+    --bg-alt-hover: #c8c8ca;
+    --fg-button-color: var(--accent-color);
+	--fg-color: #000000;
+	--input-color: #bdbdcc;
+	--link-color: #2e4dd0;
+	--hr-color: #494953;
+	--err-bg: #cf0808;
+    --select-color: var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --bg-alt: #262626;
+        --bg-hover: #2f2f2f;
+        --bg-alt-hover: #373737;
+        --code-bg: #000000;
+        --fg-button-color: white;
+        --fg-color: #ffffff;
+        --input-color: #494949;
+        --link-color: #5ca6ff;
+        --hr-color: #aaaaaa;
+        --err-bg: #590000;
+    }
+}
+
+html {
+    color: var(--fg-color);
+    font-size: var(--font-size);
+    font-family: var(--main-font);
+    margin: 0;
+    min-height: 100vh;
+    tab-size: 8;
+}
+
+body {
+    background: var(--bg-color);
+	margin: 0;
+    min-height: 100vh;
+}
+
+code, pre {
+    background: var(--code-bg);
+    font-family: var(--code-font);
+    font-size: var(--code-size);
+}
+
+code {
+    border-radius: 0.3em;
+    padding: 0.1em;
+}
+
+pre {
+    border-radius: 0.6em;
+    margin: 2em;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a {
+    color: var(--link-color);
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid var(--hr-color);
+    margin: 20px 0;
+}
+
+select,
+input {
+    border: 1px solid #aaaaaa;
+}
+
+select {
+    background: var(--input-color);
+    color: var(--fg-color);
+    font-family: var(--main-font);
+}
+
+input {
+    background: var(--input-color);
+    color: var(--fg-color);
+    font-family: var(--main-font);
+}
+
+input[type=submit] {
+    color: #ffffff;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+details.release div,
+summary {
+    background: var(--bg-hover);
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+}
+
+.light-banner
+details.release
+div, summary {
+    background: var(--bg-alt-hover);
+}
+
+details.release div {
+    border-color: var(--fg-color);
+    margin: 0 30px;
+}
+
+details.release div:first-child {
+    margin-top: 30px;
+}
+
+details.release div:last-child {
+    border-bottom: 1px solid var(--fg-color);
+    margin-bottom: 30px;
+}
+
+details.release div * a {
+    color: var(--fg-color);
+    margin: 0;
+    text-decoration: none;
+}
+
+details.release div * a:hover {
+    text-decoration: underline;
+}
+
+details.release table {
+    border: 1px solid var(--fg-color);
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+}
+
+details.release table thead {
+    background: var(--bg-hover);
+}
+
+details.release table thead td {
+    font-family: var(--nav-font);
+}
+
+details.release table td {
+    border: 1px solid var(--fg-color);
+    padding: 10px;
+}
+
+li {
+    margin: 0.2em 0;
+}
+
+::selection {
+    color: white;
+    background: var(--select-color);
+}
+
+input[type=submit],
+input[type=file]::file-selector-button {
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 0.9rem;
+    background: var(--accent-color);
+    border: none;
+    color: #ffffff;
+    outline: 0 !important;
+    padding: 7px 15px;
+}
+
+input[type=submit]:hover,
+input[type=file]::file-selector-button:hover {
+    transition: 0.2s;
+    background: var(--accent-hover);
+    cursor: pointer;
+}
+
+input[type=submit]:active,
+input[type=file]::file-selector-button:active {
+    background: var(--accent-click);
+    cursor: pointer;
+}
+
+input[type=file] {
+    margin: 10px 5px 10px 0;
+    background: var(--bg-color);
+    border: none;
+    font-family: var(--main-font);
+    font-size: 0.9rem;
+}
+
+input:focus,
+select:focus {
+    outline-color: var(--accent-color);
+}
+
+nav {
+	background: var(--site-dark);
+	padding: 0.8em;
+}
+
+nav * {
+	color: white;
+	font-family: var(--nav-font);
+	margin: 0 1em;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+nav a img {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+nav span {
+    float: right;
+    padding-top: 0.1em;
+}
+
+nav span a:hover {
+	text-decoration: underline;
+}
+
+#home-banner {
+    color: white;
+	background-image: linear-gradient(50deg, var(--site-dark), var(--site-navy) 15%, var(--accent-hover));
+	padding: 11em 20%;
+}
+
+#home-banner * {
+	font-family: var(--nav-font);
+}
+
+#home-banner h3 {
+	font-weight: normal;
+}
+
+#home-banner span input {
+	margin: 0.5em 1.5em 0.5em 0;
+    padding: 10px 18px;
+}
+
+#top-banner {
+    color: white;
+	background-image: linear-gradient(50deg, var(--site-dark), var(--site-navy) 15%, var(--accent-hover));
+	padding: 2.4em 15%;
+}
+
+#top-banner * {
+	font-family: var(--nav-font);
+}
+
+#top-banner h3 {
+	font-weight: normal;
+}
+
+#top-banner span input {
+	margin: 0.5em 1.5em 0.5em 0;
+    padding: 10px 18px;
+}
+
+.yellow-button {
+    background: #a16a02 !important;
+}
+
+.yellow-button:hover {
+    background: #8d5c01 !important;
+}
+
+.yellow-button:active {
+    background: #794e00 !important;
+}
+
+.center-banner {
+	padding: 5em 15%;
+    text-align: center;
+}
+
+.center-banner * {
+    font-family: var(--nav-font);
+}
+
+.center-banner h3 {
+    font-weight: normal;
+}
+
+.center-banner img {
+    margin: 3em 0 1em 0;
+    width: 100%;
+}
+
+.left-banner {
+    font-size: 100%;
+	padding: 3em 15%;
+    text-align: left;
+}
+
+.left-banner * {
+    font-family: var(--main-font);
+}
+
+.left-banner h1,
+.left-banner h2,
+.left-banner h3,
+.left-banner h4,
+.left-banner h5,
+.left-banner h6 {
+    font-family: var(--nav-font);
+}
+
+.left-banner h3 {
+    margin-top: 2em;
+}
+
+.left-banner img {
+    margin: 2em 0 1em 0;
+    width: 100%;
+}
+
+.light-banner {
+    background: var(--bg-alt);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.installer {
+    background: var(--bg-hover);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0 1em;
+    width: 16.7%;
+}
+
+.installer h3 {
+    font-family: var(--nav-font);
+    font-size: 110%;
+    font-weight: normal;
+    margin: 1em 0;
+}
+
+.installer ul {
+    list-style: none;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.installer ul li {
+    background: var(--bg-color);
+    border: 1px solid #777777;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0.3em 0;*/
+    margin: 0;
+    padding: 0.3em 0.5em;
+}
+
+.installer ul li:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.installer ul li:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom: 1px solid #777777;
+}
+
+.installer ul li span:first-child {
+    font-size: 95%;
+    padding-top: 0.3em;
+}
+
+.installer ul li span:last-child {
+    float: right;
+}
+
+.installer ul li a {
+    background: var(--accent-color);
+    border: 1px solid #bbbbbb;
+    border-left: none;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    width: 0.8em;
+}
+
+.installer ul li a:hover {
+    background: var(--accent-hover);
+    color: white;
+}
+
+.installer ul li a:active {
+    background: var(--accent-click);
+    color: white;
+}
+
+.installer ul li a:first-child {
+    border-left: 1px solid #bbbbbb;
+    border-radius: 7px 0 0 7px;
+    font-weight: normal;
+}
+
+.installer ul li a:last-child {
+    border-radius: 0 7px 7px 0;
+}
+
+#footer {
+    color: white;
+    background-image: linear-gradient(50deg, var(--site-dark), var(--site-navy) 15%, #022a94);
+	padding: 1em 20%;
+}
+
+#footer * {
+	color: white;
+	font-family: var(--nav-font);
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+#footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+#footer hr {
+    border-bottom: 1px solid #dddddd;
+    margin-top: 2em;
+}
+
+#footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer a {
+    display: block;
+    margin: 0.5em 0;
+    text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
