@@ -2,29 +2,40 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+Mono");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
 
+@font-face {
+    font-family: "Segoe UI Symbol";
+    src:
+        local("Segoe UI Symbol"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/symbol/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/symbol/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/symbol/latest.ttf) format("truetype");
+    font-weight: 1100;
+}
+
 :root {
     --code-bg: #dfdfdf;
     --code-font: "Noto Sans Mono", monospace;
     --code-size: 0.9em;
     --font-size: 16px;
     --main-font: "Lato", sans-serif;
-	--nav-font: "Red Hat Display", sans-serif;
-	--accent-color: #165fd2;
-	--accent-hover: #043bcf;
-	--accent-click: #022ca0;
+    --symbol-font: "Segoe UI Symbol", sans-serif;
+    --nav-font: "Red Hat Display", sans-serif;
+    --accent-color: #165fd2;
+    --accent-hover: #043bcf;
+    --accent-click: #022ca0;
     --accent-dark: #001399;
-	--site-navy: #00144b;
-	--site-dark: #00103d;
-	--bg-color: #e8e8ed;
+    --site-navy: #00144b;
+    --site-dark: #00103d;
+    --bg-color: #e8e8ed;
     --bg-alt: #dedede;
-	--bg-hover: #d3d3d3;
+    --bg-hover: #d3d3d3;
     --bg-alt-hover: #c8c8ca;
     --fg-button-color: var(--accent-color);
-	--fg-color: #000000;
-	--input-color: #bdbdcc;
-	--link-color: #2e4dd0;
-	--hr-color: #494953;
-	--err-bg: #cf0808;
+    --fg-color: #000000;
+    --input-color: #bdbdcc;
+    --link-color: #2e4dd0;
+    --hr-color: #494953;
+    --err-bg: #cf0808;
     --select-color: var(--accent-color);
 }
 
@@ -55,7 +66,7 @@ html {
 
 body {
     background: var(--bg-color);
-	margin: 0;
+    margin: 0;
     min-height: 100vh;
 }
 
@@ -234,16 +245,16 @@ select:focus {
 }
 
 nav {
-	background: var(--site-dark);
-	padding: 0.8em;
+    background: var(--site-dark);
+    padding: 0.8em;
 }
 
 nav * {
-	color: white;
-	font-family: var(--nav-font);
-	margin: 0 1em;
-	text-decoration: none;
-	vertical-align: middle;
+    color: white;
+    font-family: var(--nav-font);
+    margin: 0 1em;
+    text-decoration: none;
+    vertical-align: middle;
 }
 
 nav a img {
@@ -257,44 +268,44 @@ nav span {
 }
 
 nav span a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #home-banner {
     color: white;
-	background-image: linear-gradient(50deg, var(--site-dark), var(--site-navy) 15%, var(--accent-hover));
-	padding: 11em 20%;
+    background-image: linear-gradient(50deg, var(--site-dark), var(--site-navy) 15%, var(--accent-hover));
+    padding: 11em 20%;
 }
 
 #home-banner * {
-	font-family: var(--nav-font);
+    font-family: var(--nav-font);
 }
 
 #home-banner h3 {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 #home-banner span input {
-	margin: 0.5em 1.5em 0.5em 0;
+    margin: 0.5em 1.5em 0.5em 0;
     padding: 10px 18px;
 }
 
 #top-banner {
     color: white;
-	background-image: linear-gradient(50deg, var(--site-dark), var(--site-navy) 15%, var(--accent-hover));
-	padding: 2.4em 15%;
+    background-image: linear-gradient(50deg, var(--site-dark), var(--site-navy) 15%, var(--accent-hover));
+    padding: 2.4em 15%;
 }
 
 #top-banner * {
-	font-family: var(--nav-font);
+    font-family: var(--nav-font);
 }
 
 #top-banner h3 {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 #top-banner span input {
-	margin: 0.5em 1.5em 0.5em 0;
+    margin: 0.5em 1.5em 0.5em 0;
     padding: 10px 18px;
 }
 
@@ -311,7 +322,7 @@ nav span a:hover {
 }
 
 .center-banner {
-	padding: 5em 15%;
+    padding: 5em 15%;
     text-align: center;
 }
 
@@ -330,7 +341,7 @@ nav span a:hover {
 
 .left-banner {
     font-size: 100%;
-	padding: 3em 15%;
+    padding: 3em 15%;
     text-align: left;
 }
 
@@ -422,6 +433,7 @@ nav span a:hover {
     border-left: none;
     color: white;
     display: inline-block;
+    font-family: var(--symbol-font);
     font-weight: bold;
     padding: 0.2em 0.5em;
     text-align: center;
@@ -452,14 +464,14 @@ nav span a:hover {
 #footer {
     color: white;
     background-image: linear-gradient(50deg, var(--site-dark), var(--site-navy) 15%, #022a94);
-	padding: 1em 20%;
+    padding: 1em 20%;
 }
 
 #footer * {
-	color: white;
-	font-family: var(--nav-font);
-	text-decoration: none;
-	vertical-align: middle;
+    color: white;
+    font-family: var(--nav-font);
+    text-decoration: none;
+    vertical-align: middle;
 }
 
 #footer img {
@@ -484,5 +496,5 @@ nav span a:hover {
 }
 
 #footer a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
