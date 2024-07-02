@@ -185,7 +185,8 @@ details.release table {
 }
 
 details.release table thead {
-    background: var(--bg-hover);
+    background: var(--accent-color);
+    color: white;
 }
 
 details.release table thead td {
