@@ -500,12 +500,24 @@ nav span a:hover {
     justify-content: space-between;
 }
 
-#footer a {
+#footer span {
     display: block;
     margin: 0.5em 0;
+}
+
+#footer a {
     text-decoration: none;
+}
+
+#footer span.external a {
+    text-decoration: underline dotted;
 }
 
 #footer a:hover {
     text-decoration: underline;
+}
+
+#footer sup {
+    margin: 0 0 0 1px !important;
+    vertical-align: super !important;
 }
