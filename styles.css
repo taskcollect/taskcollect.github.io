@@ -521,3 +521,22 @@ nav span a:hover {
     margin: 0 0 0 1px !important;
     vertical-align: super !important;
 }
+
+#error {
+    background: color-mix(in srgb, var(--site-dark) 10%, var(--bg-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 317.167px);
+    text-align: center;
+}
+
+#error h1 {
+    border-radius: 50%;
+    border: 5px solid var(--fg-color);
+    display: inline-block;
+    font-size: 5em;
+    margin: 0.2em;
+    user-select: none;
+    width: 1.3em;
+}
