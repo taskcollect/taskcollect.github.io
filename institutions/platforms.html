@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/favicon.ico" sizes="any">
+<link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://taskcollect.codeberg.page/assets/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../styles.css">
+<title>TaskCollect</title>
+</head>
+<body>
+<nav>
+	<a href="../index.html"><img height=30 src="../wordmark.png"></a>
+	<span>
+		<a href="../install.html">Install</a>
+		<a href="../docs.html">Docs</a>
+		<a href="../contrib.html">Contribute</a>
+		<a href="../institutions.html">Institutions</a>
+		<a href="../contact.html">Contact</a>
+	</span>
+</nav>
+<div id="top-banner">
+	<h1>Platform support</h1>
+</div>
+<div class="left-banner">
+	<h2 id="expectations">What you can expect</h2>
+	<p>
+		The TaskCollect development team is small, but the number of existing educational platforms is huge.
+        Each platform uses its own proprietary protocols and APIs, often neglecting well-established standards
+        as well. This means that we have to put significant time and effort to manually creating the support layer
+        for each platform.
+    </p>
+    <p>
+        For each educational institution, we have to add platform support for all the educational
+        platforms in use. The more features a platform has, the more we have to implement. Adding TaskCollect
+        support for an institution may take up to a year with our limited resources.
+	</p>
+	<p>
+		If you want us to add support for a certain platform/institution, you can send a request to
+        <a href="mailto:~kvo/taskcollect-discuss@lists.sr.ht">taskcollect-discuss</a>. However, given our
+        constraints, you might also wish to hire software developers to implement platform support and have them
+        send us their work to be integrated into our codebase. If you have the necessary skills, you could also
+        take on the challenge yourself. More information about contributing to TaskCollect is available
+        <a href="../contrib.html">here</a>.
+	</p>
+    <p>
+        The rest of this page details the current state of TaskCollect's platform support.
+    </p>
+</div>
+<div class="left-banner light-banner">
+	<h2 id="example">Example School</h2>
+	<h4>
+		Maintainer(s): <a href="https://github.com/kv-o">kvo</a>
+	</h4>
+    <p>
+        Example School support is being added as part of the refactoring process which
+        is currently leading up to TaskCollect v1.1.0. Expect support to be complete upon
+        the v1.1.0 release.
+    </p>
+    <p>
+        Current support status:
+    </p>
+    <ul>
+    <li><dl>
+        <dt>example</dt>
+        <dd><input type="checkbox" id="example-auth" checked disabled><label for="example-auth">auth</label></dd>
+        <dd><input type="checkbox" id="example-classes" disabled><label for="example-classes">classes</label></dd>
+        <dd><input type="checkbox" id="example-events" disabled><label for="example-events">events</label></dd>
+        <dd><input type="checkbox" id="example-grades" disabled><label for="example-grades">grades</label></dd>
+        <dd><input type="checkbox" id="example-lessons" checked disabled><label for="example-lessons">lessons</label></dd>
+        <dd><input type="checkbox" id="example-messages" disabled><label for="example-messages">messages</label></dd>
+        <dd><input type="checkbox" id="example-resources" disabled><label for="example-resources">resources</label></dd>
+        <dd><input type="checkbox" id="example-tasks" disabled><label for="example-tasks">tasks</label></dd>
+    </dl></li>
+    </ul>
+</div>
+<div class="left-banner">
+	<h2 id="gihs">Glenunga International High School</h2>
+    <h4>
+		Maintainer(s): <a href="https://github.com/kv-o">kvo</a>, <a href="https://codeberg.org/al2f">al2f</a>
+    </h4>
+	<p>
+		GIHS was the first supported institution and continues to be the primary target for ongoing support.
+        Continued support from 2025 onwards will only be possible if a new maintainer for GIHS is found. Please
+        email <a href="mailto:~kvo/taskcollect-discuss@lists.sr.ht">taskcollect-discuss</a> if this sounds
+        interesting to you. You may need to prove your enrolment at GIHS before your approval.
+	</p>
+    <p>
+        Current support status:
+    </p>
+    <ul>
+    <li><dl>
+        <dt>app.powerbi.com</dt>
+        <dd><input type="checkbox" id="learnprof-auth" disabled><label for="learnprof-auth">auth</label></dd>
+        <dd><input type="checkbox" id="learnprof-grades" disabled><label for="learnprof-grades">grades</label></dd>
+    </dl></li>
+    <li><dl>
+        <dt>classroom.google.com</dt>
+        <dd><input type="checkbox" id="classroom-auth" disabled><label for="classroom-auth">auth</label></dd>
+        <dd><input type="checkbox" id="classroom-classes" disabled><label for="classroom-classes">classes</label></dd>
+        <dd><input type="checkbox" id="classroom-grades" disabled><label for="classroom-grades">grades</label></dd>
+        <dd><input type="checkbox" id="classroom-resources" disabled><label for="classroom-resources">resources</label></dd>
+        <dd><input type="checkbox" id="classroom-tasks" disabled><label for="classroom-tasks">tasks</label></dd>
+    </dl></li>
+    <li><dl>
+        <dt>gihs.daymap.net</dt>
+        <dd><input type="checkbox" id="daymap-auth" checked disabled><label for="daymap-auth">auth</label></dd>
+        <dd><input type="checkbox" id="daymap-classes" checked disabled><label for="daymap-classes">classes</label></dd>
+        <dd><input type="checkbox" id="daymap-grades" checked disabled><label for="daymap-grades">grades</label></dd>
+        <dd><input type="checkbox" id="daymap-lessons" checked disabled><label for="daymap-lessons">lessons</label></dd>
+        <dd><input type="checkbox" id="daymap-messages" disabled><label for="daymap-messages">messages</label></dd>
+        <dd><input type="checkbox" id="daymap-resources" checked disabled><label for="daymap-resources">resources</label></dd>
+        <dd><input type="checkbox" id="daymap-tasks" checked disabled><label for="daymap-tasks">tasks</label></dd>
+    </dl></li>
+    <li><dl>
+        <dt>outlook.office365.com</dt>
+        <dd><input type="checkbox" id="outlook-auth" disabled><label for="outlook-auth">auth</label></dd>
+        <dd><input type="checkbox" id="outlook-events" disabled><label for="outlook-events">events</label></dd>
+    </dl></li>
+    <li><dl>
+        <dt>saml.gihs.sa.edu.au</dt>
+        <dd><input type="checkbox" id="saml-auth" checked disabled><label for="saml-auth">auth</label></dd>
+    </dl></li>
+    </ul>
+</div>
+<div class="left-banner light-banner">
+	<h2 id="uofa">University of Adelaide</h2>
+	<h4>
+		Maintainer(s): <a href="https://github.com/kv-o">kvo</a>, <a href="https://github.com/Wasabi1092">Wasabi1092</a>
+	</h4>
+    <p>
+        Current support status:
+    </p>
+    <ul>
+    <li><dl>
+        <dt>login.adelaide.edu.au</dt>
+        <dd><input type="checkbox" id="sso-auth" disabled><label for="sso-auth">auth</label></dd>
+    </dl></li>
+    <li><dl>
+        <dt>myadelaide.uni.adelaide.edu.au</dt>
+        <dd><input type="checkbox" id="myadelaide-auth" disabled><label for="myadelaide-auth">auth</label></dd>
+        <dd><input type="checkbox" id="myadelaide-grades" disabled><label for="myadelaide-grades">grades</label></dd>
+        <dd><input type="checkbox" id="myadelaide-lessons" disabled><label for="myadelaide-lessons">lessons</label></dd>
+    </dl></li>
+    <li><dl>
+        <dt>myuni.adelaide.edu.au</dt>
+        <dd><input type="checkbox" id="canvas-auth" disabled><label for="canvas-auth">auth</label></dd>
+        <dd><input type="checkbox" id="canvas-classes" disabled><label for="canvas-classes">classes</label></dd>
+        <dd><input type="checkbox" id="canvas-events" disabled><label for="canvas-events">events</label></dd>
+        <dd><input type="checkbox" id="canvas-grades" disabled><label for="canvas-grades">grades</label></dd>
+        <dd><input type="checkbox" id="canvas-messages" disabled><label for="canvas-messages">messages</label></dd>
+        <dd><input type="checkbox" id="canvas-resources" disabled><label for="canvas-resources">resources</label></dd>
+        <dd><input type="checkbox" id="canvas-tasks" disabled><label for="canvas-tasks">tasks</label></dd>
+    </dl></li>
+    </ul>
+</div>
+<div id="footer">
+	<div class="row">
+		<div class="col">
+			<span><a href="../install.html"><h4>Get started</h4></a></span>
+			<span><a href="../install.html">Install</a></span>
+			<span><a href="../docs/tour.html">Tour</a></span>
+			<span><a href="../docs/faq.html">FAQ</a></span>
+		</div>
+		<div class="col">
+			<span><a href="../docs.html"><h4>Documentation</h4></a></span>
+			<span><a href="../docs/design.html">Design</a></span>
+			<span><a href="../docs/privacy.html">Privacy policy</a></span>
+			<span><a href="../docs/terms.html">Terms of service</a></span>
+		</div>
+		<div class="col">
+			<span><a href="../contrib.html"><h4>Contribute</h4></a></span>
+			<span><a href="https://git.sr.ht/~kvo/taskcollect">Source code</a><sup>🡵</sup></span>
+			<span><a href="https://todo.sr.ht/~kvo/taskcollect">Issue tracker</a><sup>🡵</sup></span>
+			<span><a href="https://sr.ht/~kvo/taskcollect/lists">Mailing lists</a><sup>🡵</sup></span>
+			<!-- <span><a href="../contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
+		</div>
+		<div class="col">
+			<span><a href="../institutions.html"><h4>Institutions</h4></a></span>
+			<span><a href="../institutions/deploy.html">Deployment</a></span>
+			<span><a href="../institutions/platforms.html">Platform support</a></span>
+		</div>
+		<div class="col">
+			<span><a href="../contact.html"><h4>Contact</h4></a></span>
+			<span><a href="../contact/enquiries.html">General enquiries</a></span>
+			<span><a href="../contact/devel.html">Development</a></span>
+			<span><a href="../contact/security.html">Security</a></span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
