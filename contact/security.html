@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/favicon.ico" sizes="any">
+<link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://taskcollect.codeberg.page/assets/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="../styles.css">
+<title>TaskCollect</title>
+</head>
+<body>
+<nav>
+	<a href="../index.html"><img height=30 src="../wordmark.png"></a>
+	<span>
+		<a href="../install.html">Install</a>
+		<a href="../docs.html">Docs</a>
+		<a href="../contrib.html">Contribute</a>
+		<a href="../institutions.html">Institutions</a>
+		<a href="../contact.html">Contact</a>
+	</span>
+</nav>
+<div id="top-banner">
+	<h1>Security</h1>
+</div>
+<div class="left-banner">
+	<h2 id="reporting">Reporting guidelines</h2>
+	<p>
+		Suspected or confirmed security vulnerabilities in TaskCollect should be reported to
+		<a href="mailto:~kvo/taskcollect-discuss@lists.sr.ht">taskcollect-discuss</a>. Please prefix the
+		subject line of your email with "[SECURITY]" so that we can easily distinguish between queries
+		and security incidents. If the vulnerability has an associated CVE ID, please include it in the
+		subject line as well.
+	</p>
+	<p>
+		As with all other emails sent to
+		<a href="mailto:~kvo/taskcollect-discuss@lists.sr.ht">taskcollect-discuss</a>, security-related
+		emails are only visible to the TaskCollect development team and not to members of the wider public.
+		We aim to respond to security reports as quickly as possible, but given our limited time and
+		availability, we cannot make any guarantees as to when we will provide a response. Please be patient.
+    </p>
+</div>
+<div class="left-banner light-banner">
+	<h2 id="disclosure">Vulnerability disclosure and announcements</h2>
+    <p>
+        Given the sensitive nature of security vulnerabilities, we do not immediately disclose the
+		existence of existing vulnerabilities. These are the steps we will take to address security
+		vulnerabilities:
+	</p>
+	<ol>
+		<li>The security report is examined and confirmed.</li>
+		<li>A team member is allocated to fixing the underlying issue and given a timeline for its resolution.</li>
+		<li>The fix is reviewed and applied to our public source repository.</li>
+		<li>The codebase is audited for similar and/or related issues.</li>
+		<li>A new public release is made and announced, mentioning some details about the vulnerability and how it was fixed.</li>
+		<li>
+			If the vulnerability was significant, an announcement is made on
+			<a href="https://lists.sr.ht/~kvo/taskcollect-announce">taskcollect-announce</a>
+			with a technical analysis of the issue, its consequences, and the steps taken to fix it.
+		</li>
+	</ol>
+	<p>
+		This may take some time. Please be mindful of this.
+	</p>
+</div>
+<div id="footer">
+	<div class="row">
+		<div class="col">
+			<span><a href="../install.html"><h4>Get started</h4></a></span>
+			<span><a href="../install.html">Install</a></span>
+			<span><a href="../docs/tour.html">Tour</a></span>
+			<span><a href="../docs/faq.html">FAQ</a></span>
+		</div>
+		<div class="col">
+			<span><a href="../docs.html"><h4>Documentation</h4></a></span>
+			<span><a href="../docs/design.html">Design</a></span>
+			<span><a href="../docs/privacy.html">Privacy policy</a></span>
+			<span><a href="../docs/terms.html">Terms of service</a></span>
+		</div>
+		<div class="col">
+			<span><a href="../contrib.html"><h4>Contribute</h4></a></span>
+			<span><a href="https://git.sr.ht/~kvo/taskcollect">Source code</a><sup>🡵</sup></span>
+			<span><a href="https://todo.sr.ht/~kvo/taskcollect">Issue tracker</a><sup>🡵</sup></span>
+			<span><a href="https://sr.ht/~kvo/taskcollect/lists">Mailing lists</a><sup>🡵</sup></span>
+			<!-- <span><a href="../contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
+		</div>
+		<div class="col">
+			<span><a href="../institutions.html"><h4>Institutions</h4></a></span>
+			<span><a href="../institutions/deploy.html">Deployment</a></span>
+			<span><a href="../institutions/platforms.html">Platform support</a></span>
+		</div>
+		<div class="col">
+			<span><a href="../contact.html"><h4>Contact</h4></a></span>
+			<span><a href="../contact/enquiries.html">General enquiries</a></span>
+			<span><a href="../contact/devel.html">Development</a></span>
+			<span><a href="../contact/security.html">Security</a></span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
