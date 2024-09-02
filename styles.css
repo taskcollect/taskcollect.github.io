@@ -13,9 +13,9 @@
 }
 
 :root {
-    --code-bg: #dfdfdf;
+    --code-bg: #bebebe80;
     --code-font: "Noto Sans Mono", monospace;
-    --code-size: 0.9em;
+    --code-size: calc(0.8 * var(--font-size));
     --font-size: 16px;
     --main-font: "Lato", sans-serif;
     --symbol-font: "Segoe UI Symbol", sans-serif;
@@ -72,19 +72,32 @@ body {
 
 code, pre {
     background: var(--code-bg);
-    font-family: var(--code-font) !important;
-    font-size: var(--code-size);
+    font-size: var(--code-size) !important;
 }
 
 code {
     border-radius: 0.3em;
+    font-family: var(--code-font) !important;
+    margin: 0 !important;
     padding: 0.1em;
 }
 
+pre code {
+    background: none;
+}
+
 pre {
+    border: 1px solid #999;
     border-radius: 0.6em;
     margin: 2em;
-    padding: 1em;
+    overflow: scroll;
+    padding: 0.8em;
+}
+
+@media (prefers-color-scheme: dark) {
+    pre {
+        border: none;
+    }
 }
 
 h1 {

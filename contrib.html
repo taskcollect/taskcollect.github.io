@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/favicon.ico" sizes="any">
+<link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://taskcollect.codeberg.page/assets/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<title>TaskCollect</title>
+</head>
+<body>
+<nav style="background: #ffa000; color: black; text-align: center;">
+	This site is a work in progress. Some pages may be incomplete, and will display poorly on smaller screens.
+</nav>
+<nav>
+	<a href="index.html"><img height=30 src="wordmark.png"></a>
+	<span>
+		<a href="install.html">Install</a>
+		<a href="docs.html">Docs</a>
+		<a href="contrib.html">Contribute</a>
+		<a href="institutions.html">Institutions</a>
+		<a href="contact/enquiries.html">Contact</a>
+	</span>
+</nav>
+<div id="top-banner">
+	<h1>Contribute</h1>
+</div>
+<div class="left-banner">
+	<h2 id="intro">Getting started</h2>
+	<p>
+	    Before contributing to TaskCollect, you should familiarise yourself with
+		the relevant parts of the <a href="https://git.sr.ht/~kvo/taskcollect">source code</a>,
+		the <a href="https://git.sr.ht/~kvo/taskcollect/tree/main/item/CONTRIBUTING.md">contributing guidelines</a>,
+		and our contribution process. In particular, three items are of note:
+	</p>
+	<ul>
+		<li>Development occurs on <a href="https://sr.ht/~kvo/taskcollect">SourceHut</a>, not on the official mirrors at Codeberg or GitHub.</li>
+		<li>Discussion occurs on our <a href="https://sr.ht/~kvo/taskcollect/lists">official mailing lists</a> (and to a lesser extent, on <a href="https://web.libera.chat/#taskcollect">IRC</a>).</li>
+		<li>Contributions are sent as <a href="https://git-send-email.io/">patches</a> by email, not as GitHub-style pull requests.</li>
+	</ul>
+	<p>
+		Once you have accustomed yourself to the way our workflow runs, you can send your first patch!
+	</p>
+</div>
+<div class="left-banner light-banner">
+	<h2 id="mkpatch">Creating your patch</h2>
+    <p>
+        Thanks to our patch-based workflow, you do not need to switch to a new
+		branch to start making changes to the codebase. (You can if you prefer,
+		but this is not a requirement of the process). Simply start making
+		changes to the source code on the branch you are on (or a different one
+		if you so choose), and when you have made a single meaningful change
+		that compiles, runs, and works more or less as intended, make sure to
+		commit. In general, your commit messages should look somewhat like this:
+	</p>
+	<pre tabindex="0"><code>src/server/auth.go: use true random number generator</code></pre>
+	<p>
+		Or like this for detailed commit messages:
+	</p>
+	<pre tabindex="0"><code>all: remove python dependency
+
+Removed the Python build script. All building and running processes
+are now handled by the makefile.
+		
+Also removed the notion of "installing" TaskCollect - the TaskCollect
+server now uses the resources folder within the local cloned
+repository rather than invading the user's home directory.</code></pre>
+    <p>
+		You will need to sign off your commits with <code>git commit -s</code>
+		to indicate that you have read and agree with the
+		<a href="https://developercertificate.org/">Developer Certificate of Origin</a>.
+	</p>
+	<p>
+		You should consult the
+		<a href="https://git.sr.ht/~kvo/taskcollect/tree/main/item/CONTRIBUTING.md">contributing guidelines</a>
+		for a definitive guideline on how you should commit your changes.
+	</p>
+</div>
+<!-- <div class="left-banner">
+	<h2 id="sendpatch">Sending your patch</h2>
+</div> -->
+<div id="footer">
+	<div class="row">
+		<div class="col">
+			<span><a href="install.html"><h4>Get started</h4></a></span>
+			<span><a href="install.html">Install</a></span>
+			<span><a href="docs/tour.html">Tour</a></span>
+			<span><a href="docs/faq.html">FAQ</a></span>
+		</div>
+		<div class="col">
+			<span><a href="docs.html"><h4>Documentation</h4></a></span>
+			<span><a href="docs/privacy.html">Privacy policy</a></span>
+			<span><a href="docs/terms.html">Terms of service</a></span>
+		</div>
+		<div class="col">
+			<span><a href="contrib.html"><h4>Contribute</h4></a></span>
+			<span><a href="https://git.sr.ht/~kvo/taskcollect">Source code</a><sup>🡵</sup></span>
+			<span><a href="https://todo.sr.ht/~kvo/taskcollect">Issue tracker</a><sup>🡵</sup></span>
+			<span><a href="https://sr.ht/~kvo/taskcollect/lists">Mailing lists</a><sup>🡵</sup></span>
+			<!-- <span><a href="contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
+		</div>
+		<div class="col">
+			<span><a href="institutions.html"><h4>Institutions</h4></a></span>
+			<span><a href="institutions/deploy.html">Deployment</a></span>
+			<span><a href="institutions/platforms.html">Platform support</a></span>
+		</div>
+		<div class="col">
+			<span><a href="contact/enquiries.html"><h4>Contact</h4></a></span>
+			<span><a href="contact/enquiries.html">General enquiries</a></span>
+			<span><a href="contact/security.html">Security</a></span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
