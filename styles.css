@@ -553,3 +553,7 @@ nav span a:hover {
     user-select: none;
     width: 1.3em;
 }
+
+.documentation li {
+    margin: 10pt 0;
+}

@@ -6,59 +6,79 @@
 <link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/favicon.ico" sizes="any">
 <link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="https://taskcollect.codeberg.page/assets/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="styles.css">
 <title>TaskCollect</title>
 </head>
-<body id="full-height">
+<body>
 <nav style="background: #ffa000; color: black; text-align: center;">
 	This site is a work in progress. Some pages may be incomplete, and will display poorly on smaller screens.
 </nav>
 <nav>
-	<a href="index.html"><img height=30 src="/wordmark.png"></a>
+	<a href="index.html"><img height=30 src="wordmark.png"></a>
 	<span>
-		<a href="/install.html">Install</a>
-		<a href="/docs.html">Docs</a>
-		<a href="/contrib.html">Contribute</a>
-		<a href="/institutions.html">Institutions</a>
-		<a href="/contact/enquiries.html">Contact</a>
+		<a href="install.html">Install</a>
+		<a href="docs.html">Docs</a>
+		<a href="contrib.html">Contribute</a>
+		<a href="institutions.html">Institutions</a>
+		<a href="contact/enquiries.html">Contact</a>
 	</span>
 </nav>
-<div id="error">
-<div>
-<h1>?</h1>
-<h3>404 Not Found</h3>
-<p>The requested resource is currently under development.</p>
+<div id="top-banner">
+	<h1>Documentation</h1>
 </div>
+<div class="left-banner documentation">
+	<h2 id="intro">Getting started</h2>
+	<ul>
+		<li><b><a href="docs/tour.html">Tour</a></b><br>A quick introduction to TaskCollect, its design, and how to use it.</li>
+		<li><b><a href="https://git.sr.ht/~kvo/taskcollect">Project readme</a></b><br>The official overview of the TaskCollect codebase.</li>
+		<li><b><a href="institutions/platforms.html">Plaform support list</a></b><br>A list of supported educational platforms, with supported functionality indicated.</li>
+	</ul>
+</div>
+<div class="left-banner light-banner documentation">
+	<h2 id="contrib">Contributing</h2>
+	<ul>
+		<li><b><a href="https://git.sr.ht/~kvo/taskcollect/tree/main/item/CONTRIBUTING.md">Contributing guidelines</a></b><br>The authoritative guidelines for source code contributions.</li>
+		<li><b><a href="https://todo.sr.ht/~kvo/taskcollect">Issues and feature requests</a></b><br>The official ticket tracker with all documented issues and feature requests.</li>
+		<li><b><a href="https://sr.ht/~kvo/taskcollect/lists">Mailing list archives</a></b><br>Archived threads from the <a href="https://lists.sr.ht/~kvo/taskcollect-announce">taskcollect-announce</a> and <a href="https://lists.sr.ht/~kvo/taskcollect-devel">taskcollect-devel</a> mailing lists.</li>
+	</ul>
+</div>
+<div class="left-banner documentation">
+	<h2 id="legal">Legal</h2>
+	<ul>
+		<li><b><a href="docs/privacy.html">Privacy policy</a></b><br>The official TaskCollect privacy policy.</li>
+		<li><b><a href="docs/terms.html">Terms of service</a></b><br>The official TaskCollect terms of service.</li>
+		<li><b><a href="contact/security.html">Security policy</a></b><br>TaskCollect's security policy.</li>
+	</ul>
 </div>
 <div id="footer">
 	<div class="row">
 		<div class="col">
-			<span><a href="/install.html"><h4>Get started</h4></a></span>
-			<span><a href="/install.html">Install</a></span>
-			<span><a href="/docs/tour.html">Tour</a></span>
-			<span><a href="/docs/faq.html">FAQ</a></span>
+			<span><a href="install.html"><h4>Get started</h4></a></span>
+			<span><a href="install.html">Install</a></span>
+			<span><a href="docs/tour.html">Tour</a></span>
+			<span><a href="docs/faq.html">FAQ</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/docs.html"><h4>Documentation</h4></a></span>
-			<span><a href="/docs/privacy.html">Privacy policy</a></span>
-			<span><a href="/docs/terms.html">Terms of service</a></span>
+			<span><a href="docs.html"><h4>Documentation</h4></a></span>
+			<span><a href="docs/privacy.html">Privacy policy</a></span>
+			<span><a href="docs/terms.html">Terms of service</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/contrib.html"><h4>Contribute</h4></a></span>
+			<span><a href="contrib.html"><h4>Contribute</h4></a></span>
 			<span><a href="https://git.sr.ht/~kvo/taskcollect">Source code</a><sup>🡵</sup></span>
 			<span><a href="https://todo.sr.ht/~kvo/taskcollect">Issue tracker</a><sup>🡵</sup></span>
 			<span><a href="https://sr.ht/~kvo/taskcollect/lists">Mailing lists</a><sup>🡵</sup></span>
-			<!-- <span><a href="/contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
+			<!-- <span><a href="contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
 		</div>
 		<div class="col">
-			<span><a href="/institutions.html"><h4>Institutions</h4></a></span>
-			<span><a href="/institutions/deploy.html">Deployment</a></span>
-			<span><a href="/institutions/platforms.html">Platform support</a></span>
+			<span><a href="institutions.html"><h4>Institutions</h4></a></span>
+			<span><a href="institutions/deploy.html">Deployment</a></span>
+			<span><a href="institutions/platforms.html">Platform support</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/contact/enquiries.html"><h4>Contact</h4></a></span>
-			<span><a href="/contact/enquiries.html">General enquiries</a></span>
-			<span><a href="/contact/security.html">Security</a></span>
+			<span><a href="contact/enquiries.html"><h4>Contact</h4></a></span>
+			<span><a href="contact/enquiries.html">General enquiries</a></span>
+			<span><a href="contact/security.html">Security</a></span>
 		</div>
 	</div>
 </div>

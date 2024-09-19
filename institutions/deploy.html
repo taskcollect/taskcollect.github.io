@@ -6,59 +6,95 @@
 <link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/favicon.ico" sizes="any">
 <link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="https://taskcollect.codeberg.page/assets/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="../styles.css">
 <title>TaskCollect</title>
 </head>
-<body id="full-height">
+<body>
 <nav style="background: #ffa000; color: black; text-align: center;">
-	This site is a work in progress. Some pages may be incomplete, and will display poorly on smaller screens.
+    This site is a work in progress. Some pages may be incomplete, and will display poorly on smaller screens.
 </nav>
 <nav>
-	<a href="index.html"><img height=30 src="/wordmark.png"></a>
-	<span>
-		<a href="/install.html">Install</a>
-		<a href="/docs.html">Docs</a>
-		<a href="/contrib.html">Contribute</a>
-		<a href="/institutions.html">Institutions</a>
-		<a href="/contact/enquiries.html">Contact</a>
-	</span>
+    <a href="../index.html"><img height=30 src="../wordmark.png"></a>
+    <span>
+        <a href="../install.html">Install</a>
+        <a href="../docs.html">Docs</a>
+        <a href="../contrib.html">Contribute</a>
+        <a href="../institutions.html">Institutions</a>
+        <a href="../contact/enquiries.html">Contact</a>
+    </span>
 </nav>
-<div id="error">
-<div>
-<h1>?</h1>
-<h3>404 Not Found</h3>
-<p>The requested resource is currently under development.</p>
+<div id="top-banner">
+    <h1>Deployment</h1>
 </div>
+<div class="left-banner">
+    <h2 id="supported">Supported deployment</h2>
+    <p>
+        If you would like to deploy TaskCollect software but would like some
+		help in the process, <a href="../contact/enquiries.html">contact us</a>!
+		We would be happy to negotiate an online or a potentially an in-person
+		meeting (if we have a representative in your area) to help you get set
+		up and ready to use TaskCollect in your institution.
+    </p>
+	<p>
+		If you are a larger or official institution, we expect you to have some
+		preliminary ICT infrastructure (including computer networks, servers,
+		firewalls, and intrusion prevention systems) in place. We do not provide
+		specific consulting or support for networking or cybersecurity-related
+		matters.
+	</p>
+</div>
+<div class="left-banner light-banner">
+    <h2 id="independent">Independent deployment</h2>
+    <p>
+        You may also choose to deploy TaskCollect independently, without our
+		help. To do so, you should consult the necessary
+		<a href="../docs.html">documentation</a>, in particular the project
+		<a href="https://git.sr.ht/~kvo/taskcollect">readme</a>.
+	</p>
+	<p>
+		TaskCollect is currently built as a web server, so you will need to
+		<a href="../install.html">install</a> the server executable with its
+		dependent resources, start it, and ensure that you have the necessary
+		firewall, rate limiting, and denial of service prevention software
+		configured and running before you officially deploy in production.
+		You will also need to ensure you are able to easily update TaskCollect
+		in case important security patches or bugfixes are released.
+    </p>
+	<p>
+		Of course, do not hesitate to
+		<a href="../contact/enquiries.html">contact us</a> if you need any help
+		or advice.
+	</p>
 </div>
 <div id="footer">
 	<div class="row">
 		<div class="col">
-			<span><a href="/install.html"><h4>Get started</h4></a></span>
-			<span><a href="/install.html">Install</a></span>
-			<span><a href="/docs/tour.html">Tour</a></span>
-			<span><a href="/docs/faq.html">FAQ</a></span>
+			<span><a href="../install.html"><h4>Get started</h4></a></span>
+			<span><a href="../install.html">Install</a></span>
+			<span><a href="../docs/tour.html">Tour</a></span>
+			<span><a href="../docs/faq.html">FAQ</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/docs.html"><h4>Documentation</h4></a></span>
-			<span><a href="/docs/privacy.html">Privacy policy</a></span>
-			<span><a href="/docs/terms.html">Terms of service</a></span>
+			<span><a href="../docs.html"><h4>Documentation</h4></a></span>
+			<span><a href="../docs/privacy.html">Privacy policy</a></span>
+			<span><a href="../docs/terms.html">Terms of service</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/contrib.html"><h4>Contribute</h4></a></span>
+			<span><a href="../contrib.html"><h4>Contribute</h4></a></span>
 			<span><a href="https://git.sr.ht/~kvo/taskcollect">Source code</a><sup>🡵</sup></span>
 			<span><a href="https://todo.sr.ht/~kvo/taskcollect">Issue tracker</a><sup>🡵</sup></span>
 			<span><a href="https://sr.ht/~kvo/taskcollect/lists">Mailing lists</a><sup>🡵</sup></span>
-			<!-- <span><a href="/contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
+			<!-- <span><a href="../contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
 		</div>
 		<div class="col">
-			<span><a href="/institutions.html"><h4>Institutions</h4></a></span>
-			<span><a href="/institutions/deploy.html">Deployment</a></span>
-			<span><a href="/institutions/platforms.html">Platform support</a></span>
+			<span><a href="../institutions.html"><h4>Institutions</h4></a></span>
+			<span><a href="../institutions/deploy.html">Deployment</a></span>
+			<span><a href="../institutions/platforms.html">Platform support</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/contact/enquiries.html"><h4>Contact</h4></a></span>
-			<span><a href="/contact/enquiries.html">General enquiries</a></span>
-			<span><a href="/contact/security.html">Security</a></span>
+			<span><a href="../contact/enquiries.html"><h4>Contact</h4></a></span>
+			<span><a href="../contact/enquiries.html">General enquiries</a></span>
+			<span><a href="../contact/security.html">Security</a></span>
 		</div>
 	</div>
 </div>
