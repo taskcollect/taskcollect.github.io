@@ -557,3 +557,14 @@ nav span a:hover {
 .documentation li {
     margin: 10pt 0;
 }
+
+.contents a,
+.contents p {
+    margin: 0;
+    text-decoration: none;
+}
+
+.contents ul {
+    list-style: none;
+    margin: 0 auto;
+}

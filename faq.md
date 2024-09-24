@@ -2,8 +2,6 @@
 
 ## Table of Contents
 
-`**(contents need updating)**`
-
 Origins
   - What is the purpose of the project?
   - Who made TaskCollect?
@@ -11,7 +9,7 @@ Origins
 
 Usage
   - How do I access TaskCollect?
-  - Why is TaskCollect so difficult to install on my computer?
+  - Why is the TaskCollect server so difficult to install on my computer?
   - How do I use TaskCollect?
   - Will I never have to use platform X again?
 
@@ -20,8 +18,9 @@ Features
   - Does TaskCollect support platform X?
   - Why is feature X not available even though platform Y implements it?
   - Will TaskCollect solve my time management issues?
-  - Why is there no place to view messages from platform X?
+  - Why can't I view messages from platform X?
   - When will you fix bug X and/or implement feature Y?
+  - When will you make an app for TaskCollect?
 
 Implementation
   - Why is TaskCollect not written in language X?
@@ -39,6 +38,7 @@ Troubleshooting
   - Page X isn't loading and/or is displaying an error; why is that?
   - My institution isn't listed; what should I do?
   - Why can't I login with my institution-provided login details?
+
 
 ## Origins
 
@@ -150,7 +150,7 @@ Disregarding unrelated projects with the same name, there is a GitHub organisati
 
 ### Why are you reimplementing portions of the Go standard library?
 
-We found certain parts of the Go standard library (v1.18 when we started) insufficient for our needs. Given that our requirements were well within our development capabilities, we decided to reimplement the parts of the Go standard librar we were least satisfied with.
+We found certain parts of the Go standard library (v1.18 when we started) insufficient for our needs. Given that our requirements were well within our development capabilities, we decided to reimplement the parts of the Go standard library we were least satisfied with.
 
 ### Why have you done X instead of doing Y?
 
