@@ -606,6 +606,7 @@ nav span a:hover {
     justify-content: center;
     height: calc(100vh - 200px);
     text-align: center;
+    width: 100vw;
 }
 
 #error h1 {
@@ -616,6 +617,10 @@ nav span a:hover {
     margin: 0.2em;
     user-select: none;
     width: 1.3em;
+}
+
+#error p {
+    margin: 0 2em;
 }
 
 .documentation li {
