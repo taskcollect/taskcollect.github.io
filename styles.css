@@ -34,6 +34,7 @@
     --fg-color: #000000;
     --input-color: #bdbdcc;
     --link-color: #2e4dd0;
+    --contents-color: var(--accent-hover);
     --hr-color: #494953;
     --err-bg: #cf0808;
     --select-color: var(--accent-color);
@@ -50,6 +51,7 @@
         --fg-color: #ffffff;
         --input-color: #494949;
         --link-color: #5ca6ff;
+        --contents-color: var(--link-color);
         --hr-color: #aaaaaa;
         --err-bg: #590000;
     }
@@ -556,6 +558,10 @@ nav span a:hover {
 
 .documentation li {
     margin: 10pt 0;
+}
+
+.contents a {
+    color: var(--contents-color);
 }
 
 .contents a,

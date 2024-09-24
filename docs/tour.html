@@ -6,59 +6,144 @@
 <link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/favicon.ico" sizes="any">
 <link rel="icon" href="https://taskcollect.codeberg.page/assets/icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="https://taskcollect.codeberg.page/assets/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="../styles.css">
 <title>TaskCollect</title>
 </head>
-<body id="full-height">
+<body>
 <nav style="background: #ffa000; color: black; text-align: center;">
-	This site is a work in progress. Some pages may be incomplete, and will display poorly on smaller screens.
+	This site is a work in progress. Some components may be incomplete, and may display poorly on smaller screens.
 </nav>
 <nav>
-	<a href="index.html"><img height=30 src="/wordmark.png"></a>
+	<a href="../index.html"><img height=30 src="../wordmark.png"></a>
 	<span>
-		<a href="/install.html">Install</a>
-		<a href="/docs.html">Docs</a>
-		<a href="/contrib.html">Contribute</a>
-		<a href="/institutions.html">Institutions</a>
-		<a href="/contact/enquiries.html">Contact</a>
+		<a href="../install.html">Install</a>
+		<a href="../docs.html">Docs</a>
+		<a href="../contrib.html">Contribute</a>
+		<a href="../institutions.html">Institutions</a>
+		<a href="../contact/enquiries.html">Contact</a>
 	</span>
 </nav>
-<div id="error">
-<div>
-<h1>?</h1>
-<h3>404 Not Found</h3>
-<p>The requested resource is currently under development.</p>
+<div id="top-banner">
+	<h1>Tour</h1>
 </div>
+<div class="left-banner">
+	<h2 id="intro">Getting started</h2>
+	<p>
+		TaskCollect is a lightweight, web-based, multiplexed frontend for online
+		educational platforms. This means that you can log into TaskCollect through
+		a web browser, and use existing educational platforms (that you may be
+		enrolled into) as if they were a single, uniform, intuitive platform.
+	</p>
+	<p>
+		Since TaskCollect is currently developed as a web-based frontend, you can
+		either use an existing setup of TaskCollect (called an <i>instance</i> of
+		TaskCollect) or set it up on your own computer (i.e. <i>self-host</i>
+		TaskCollect).
+	</p>
+	<h4>Using an existing instance</h4>
+	<p>
+		If you are accessing an existing instance of TaskCollect, simply go to the
+		URL of the existing instance, and you will be greeted with the login page!
+	</p>
+	<h4>Self-hosting</h4>
+	<p>
+		If you want to self-host TaskCollect, you will need to follow the
+		<a href="../institutions/deploy.html#self-host">self-hosting steps</a>
+		to setup TaskCollect on your computer. After you have done so, you can
+		start the TaskCollect web server, then access TaskCollect via the following
+		URL: <a href="http://localhost:8080/">http://localhost:8080/</a>
+	</p>
+</div>
+<div class="left-banner light-banner">
+	<h2 id="signin">Signing in</h2>
+	<p>
+		When you login, you will need to select your institution
+		(i.e. school/university). This allows TaskCollect to select all the
+		supported educational platforms used by your institution and connect
+		to them.
+	</p>
+	<p>
+		You will also need to provide a username and a password. The email
+		field is optional for most institutions, howver, students and staff
+		at the following institutions are required to enter their
+		institution email for sign-in:
+	</p>
+	<ul>
+		<li>Glenunga International High School</li>
+	</ul>
+	<p>
+		This is a result of how authentication works for the educational
+		platforms in use at these institutions.
+	</p>
+	<img src="../login.png">
+	<p>
+		For some institutions, sign-in requires extra information that must be
+		provided through the settings page (after first sign-in) to enable
+		full institution support:
+	</p>
+	<ul>
+		<li>University of Adelaide (requires TOTP secret key)</li>
+	</ul>
+</div>
+<div class="left-banner">
+	<h2 id="interface">Using TaskCollect</h2>
+	<p>
+		When you successfully sign in to TaskCollect, you will be given a
+		reasonably simple interface. There are a few main components:
+	</p>
+	<ul>
+		<li>weekly timetable</li>
+		<li>list of tasks (with/without due date, overdue, submitted)</li>
+		<li>list of teacher-provided learning resources</li>
+		<li>academic achievement statistics</li>
+	</ul>
+	<p>
+		The information presented in all pages update on reload.
+	</p>
+	<img src="../timetable.png">
+	<p>
+		There are also user interfaces for viewing and working with individual
+		tasks and resources. In particular, this includes methods for work
+		upload and submission.
+	</p>
+	<img src="../task.png">
+	<p>
+		The design and use of these components is fairly straightforward as of
+		TaskCollect v1. The interface has been designed to be as simple and
+		intuitive as possible. Version 2 will introduce some additional features
+		which, although will be simple, will introduce new ways of working with
+		educational platforms which will be detailed here.
+	</p>
 </div>
 <div id="footer">
 	<div class="row">
 		<div class="col">
-			<span><a href="/install.html"><h4>Get started</h4></a></span>
-			<span><a href="/install.html">Install</a></span>
-			<span><a href="/docs/tour.html">Tour</a></span>
-			<span><a href="/docs/faq.html">FAQ</a></span>
+			<span><a href="../docs/tour.html"><h4>Get started</h4></a></span>
+			<span><a href="../install.html">Install</a></span>
+			<span><a href="../docs/tour.html">Tour</a></span>
+			<span><a href="../docs/faq.html">FAQ</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/docs.html"><h4>Documentation</h4></a></span>
-			<span><a href="/docs/privacy.html">Privacy policy</a></span>
-			<span><a href="/docs/terms.html">Terms of service</a></span>
+			<span><a href="../docs.html"><h4>Documentation</h4></a></span>
+			<span><a href="../docs/privacy.html">Privacy policy</a></span>
+			<span><a href="../docs/terms.html">Terms of service</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/contrib.html"><h4>Contribute</h4></a></span>
+			<span><a href="../contrib.html"><h4>Contribute</h4></a></span>
 			<span><a href="https://git.sr.ht/~kvo/taskcollect">Source code</a><sup>🡵</sup></span>
 			<span><a href="https://todo.sr.ht/~kvo/taskcollect">Issue tracker</a><sup>🡵</sup></span>
 			<span><a href="https://sr.ht/~kvo/taskcollect/lists">Mailing lists</a><sup>🡵</sup></span>
-			<!-- <span><a href="/contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
+			<!-- <span><a href="../contrib/donate.html">Donations</a><sup>🡵</sup></span> -->
 		</div>
 		<div class="col">
-			<span><a href="/institutions.html"><h4>Institutions</h4></a></span>
-			<span><a href="/institutions/deploy.html">Deployment</a></span>
-			<span><a href="/institutions/platforms.html">Platform support</a></span>
+			<span><a href="../institutions.html"><h4>Institutions</h4></a></span>
+			<span><a href="../institutions/deploy.html">Deployment</a></span>
+			<span><a href="../institutions/platforms.html">Platform support</a></span>
 		</div>
 		<div class="col">
-			<span><a href="/contact/enquiries.html"><h4>Contact</h4></a></span>
-			<span><a href="/contact/enquiries.html">General enquiries</a></span>
-			<span><a href="/contact/security.html">Security</a></span>
+			<span><a href="../contact/enquiries.html"><h4>Contact</h4></a></span>
+			<span><a href="../contact/enquiries.html">General enquiries</a></span>
+			<span><a href="../contact/security.html">Security</a></span>
 		</div>
 	</div>
 </div>

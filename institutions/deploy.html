@@ -11,7 +11,7 @@
 </head>
 <body>
 <nav style="background: #ffa000; color: black; text-align: center;">
-    This site is a work in progress. Some pages may be incomplete, and will display poorly on smaller screens.
+    This site is a work in progress. Some components may be incomplete, and may display poorly on smaller screens.
 </nav>
 <nav>
     <a href="../index.html"><img height=30 src="../wordmark.png"></a>
@@ -47,18 +47,55 @@
     <h2 id="independent">Independent deployment</h2>
     <p>
         You may also choose to deploy TaskCollect independently, without our
-		help. To do so, you should consult the necessary
+		help. To do so, you should first consult the necessary
 		<a href="../docs.html">documentation</a>, in particular the project
 		<a href="https://git.sr.ht/~kvo/taskcollect">readme</a>.
 	</p>
 	<p>
+		To install, you first need to <a href="../install.html">download</a>
+		TaskCollect. Then, unpack the downloaded <code>.tar.gz</code>
+		bundle, and in the unpacked folder, you should see the following files
+		and folders:
+	</p>
+	<pre tabindex="0"><code>.git/
+.gitignore
+CONTRIBUTING.md
+LICENSE
+README.md
+STATS.md
+cfg/
+doc/
+makefile
+prg/
+res/
+src/</code></pre>
+	<p>
+		As TaskCollect is a web server, you will need to generate a TLS private
+		key and TLS certificate. Name them <code>key.pem</code> and
+		<code>cert.pem</code>, respectively, and copy/move them to the
+		<code>res</code> subfolder (of your newly unpacked TaskCollect folder).
+		Your folder should now have the following new files:
+	</p>
+	<pre tabindex="0"><code>res/cert.pem
+res/key.pem</code></pre>
+	<p>
+		Now that all the required deployment resources are ready, run the
+		following command to deploy to production!
+	</p>
+	<pre tabindex="0"><code>make deploy</code></pre>
+	<p>
+		Ensure that you have install Make before running this command.
+		Invoking this command binds the TaskCollect server to TLS port 443
+		and TaskCollect should now be accessible by accessing the domain name
+		of your server through a web browser.
+	</p>
+	<p>
 		TaskCollect is currently built as a web server, so you will need to
-		<a href="../install.html">install</a> the server executable with its
-		dependent resources, start it, and ensure that you have the necessary
-		firewall, rate limiting, and denial of service prevention software
-		configured and running before you officially deploy in production.
-		You will also need to ensure you are able to easily update TaskCollect
-		in case important security patches or bugfixes are released.
+		ensure that you have the necessary firewall, rate limiting, and
+		denial of service prevention software configured and running before
+		you officially deploy in production. You will also need to ensure you
+		are able to easily update TaskCollect in case important security
+		patches or bugfixes are released.
     </p>
 	<p>
 		Of course, do not hesitate to
@@ -66,10 +103,31 @@
 		or advice.
 	</p>
 </div>
+<div class="left-banner">
+    <h2 id="self-host">Self-hosting</h2>
+    <p>
+        If you want to set up TaskCollect on your own device and use it for
+		personal purposes only, you can self-host the TaskCollect software.
+	</p>
+	<p>
+		To do so, <a href="../install.html">download</a> TaskCollect. Then,
+		unpack the downloaded <code>.tar.gz</code> bundle, and in the unpacked
+		folder, run the following command:
+	</p>
+	<pre tabindex="0"><code>make run</code></pre>
+	<p>
+		Ensure that you have install GNU Make before running this command.
+	</p>
+	<p>
+		If this command runs successfully, you may proceed to use TaskCollect.
+		Simply open <a href="http://localhost:8080/">http://localhost:8080/</a>
+		in your browser and voila!
+	</p>
+</div>
 <div id="footer">
 	<div class="row">
 		<div class="col">
-			<span><a href="../install.html"><h4>Get started</h4></a></span>
+			<span><a href="../docs/tour.html"><h4>Get started</h4></a></span>
 			<span><a href="../install.html">Install</a></span>
 			<span><a href="../docs/tour.html">Tour</a></span>
 			<span><a href="../docs/faq.html">FAQ</a></span>
